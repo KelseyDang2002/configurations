@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=nvidia-settings --load-config-only
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Load NVIDIA Settings
+Comment=Loads saved NVIDIA configuration at startup
