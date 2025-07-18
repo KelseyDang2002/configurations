@@ -29,8 +29,8 @@ sudo pacman -S kitty
 echo "Installing Zed..."
 curl -f https://zed.dev/install.sh | sh
 
-echo "Installing Brave..."
-yay -Sy brave-bin
+echo "Installing Zen Browser..."
+yay -S zen-browser-bin
 
 echo "Installing Spotify..."
 sudo pacman -S spotify-launcher
