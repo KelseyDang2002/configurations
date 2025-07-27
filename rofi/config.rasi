@@ -198,9 +198,9 @@ configuration {
   background-color : transparent;
   text-color       : @fg0;
 
-  margin  : 0;
-  padding : 0;
-  spacing : 0;
+  margin  : 0px;
+  padding : 0px;
+  spacing : 0px;
 }
 
 element-icon, element-text, scrollbar {
@@ -213,7 +213,7 @@ window {
   x-offset : 0px;
   y-offset : 0px;
 
-  background-color: @bg1;
+  background-color: @bg2;
   border: 1px;
   border-color: @bg3;
   border-radius: 8px;
@@ -224,7 +224,7 @@ inputbar {
   padding  : 12px 12px;
   children : [ icon-search, entry ];
 
-  background-color: @bg0;
+  background-color: @bg2;
 }
 
 icon-search, entry, element-icon, element-text {
@@ -269,7 +269,7 @@ element alternate active {
 }
 
 element selected {
-  text-color       : @bg1;
+  text-color       : @bg2;
   background-color : @accent;
 }
 
