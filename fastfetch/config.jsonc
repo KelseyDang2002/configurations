@@ -12,78 +12,82 @@
   },
   "modules": [
     {
-      "key": "╭───────────╮",
+      // "key": "╭───────────╮",
       "type": "custom",
     },
     {
-      "key": "│ {#31} user    {#keys}│",
+      "key": "{#31} -> {#keys}",
       "type": "title",
       "format": "{user-name-colored}",
     },
     {
-      "key": "│ {#32}󰇅 hname   {#keys}│",
+      "key": "{#32}󰇅 -> {#keys}",
       "type": "title",
       "format": "{host-name}",
     },
     {
-      "key": "│ {#33}󰅐 uptime  {#keys}│",
+      "key": "{#33}󰅐 -> {#keys}",
       "type": "uptime",
     },
     {
-      "key": "│ {#34}{icon} distro  {#keys}│",
+      "key": "{#34}{icon} -> {#keys}",
       "type": "os",
     },
     {
-      "key": "│ {#35} kernel  {#keys}│",
+      "key": "{#35} -> {#keys}",
       "type": "kernel",
     },
     {
-      "key": "│ {#36}󰇄 desktop {#keys}│",
+      "key": "{#36}󰇄 -> {#keys}",
       "type": "de",
     },
     {
-      "key": "│ {#31} term    {#keys}│",
+      "key": "{#36}󰇄 -> {#keys}",
+      "type": "wm",
+    },
+    {
+      "key": "{#31} -> {#keys}",
       "type": "terminal",
     },
     {
-      "key": "│ {#32} shell   {#keys}│",
+      "key": "{#32} -> {#keys}",
       "type": "shell",
     },
     {
-      "key": "│ {#33}󰍛 cpu     {#keys}│",
+      "key": "{#33}󰍛 -> {#keys}",
       "type": "cpu",
       "showPeCoreCount": true,
     },
     {
-      "key": "│ {#34}󱥁 gpu     {#keys}│",
+      "key": "{#34}󱥁 -> {#keys}",
       "type": "gpu",
       "showPeCoreCount": true,
     },
     {
-      "key": "│ {#35}󰉉 disk    {#keys}│",
+      "key": "{#35}󰉉 -> {#keys}",
       "type": "disk",
       "folders": "/",
     },
     {
-      "key": "│ {#36} memory  {#keys}│",
+      "key": "{#36} -> {#keys}",
       "type": "memory",
     },
     {
-      "key": "│ {#31}󰩟 network {#keys}│",
+      "key": "{#31}󰩟 -> {#keys}",
       "type": "localip",
       "format": "{ipv4} ({ifname})",
     },
     {
-      "key": "├───────────┤",
+      // "key": "├───────────┤",
       "type": "custom",
     },
     {
-      "key": "│ {#39} colors  {#keys}│",
+      "key": "{#39} -> {#keys}",
       "type": "colors",
       "symbol": "circle",
     },
     {
-      "key": "╰───────────╯",
+      // "key": "╰───────────╯",
       "type": "custom",
     },
   ],

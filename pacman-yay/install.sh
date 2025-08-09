@@ -58,3 +58,6 @@ echo "Installing Proton VPN..."
 sudo pacman -S networkmanager
 sudo pacman -S network-manager-applet
 sudo pacman -S proton-vpn-gtk-app
+
+echo "Installing ranger..."
+sudo pacman -S ranger
