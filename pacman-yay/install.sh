@@ -21,6 +21,9 @@ sudo pacman -S rofi
 echo "Installing cava..."
 sudo pacman -S cava
 
+echo "Installing cmatrix..."
+sudo pacman -S cmatrix
+
 # applications
 
 echo "Installing Kitty..."
