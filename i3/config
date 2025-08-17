@@ -65,7 +65,7 @@ bindsym $mod+b exec --no-startup-id zen-browser
 bindsym $mod+n exec --no-startup-id notion-app
 bindsym $mod+s exec --no-startup-id spotify-launcher
 # bindsym $mod+t exec --no-startup-id ./spotify-qt/build/spotify-qt
-bindsym $mod+d exec --no-startup-id kitty -e ranger
+bindsym $mod+d exec --no-startup-id kitty -e yazi
 bindsym $mod+Escape exec --no-startup-id kitty -e btop
 bindsym $mod+c exec --no-startup-id kitty -e cava
 bindsym $mod+m exec --no-startup-id kitty -e cmatrix
