@@ -176,7 +176,7 @@ configuration {
 @theme "/dev/null"
 
 * {
-  font: "JetBrainsMono Nerd Font Mono Regular 10";
+  font: "JetBrainsMono Nerd Font Mono Bold 12";
 
   bg0     : #1a1b26;
   bg1     : #1f2335;
@@ -192,7 +192,7 @@ configuration {
   magenta : #9a7ecc;
   cyan    : #4abaaf;
 
-  accent: @fg1;
+  accent: @red;
   urgent: @yellow;
 
   background-color : transparent;
@@ -214,7 +214,7 @@ window {
   y-offset : 0px;
 
   background-color: @bg2;
-  border: 1px;
+  border: 2px;
   border-color: @fg2;
   border-radius: 8px;
 }
