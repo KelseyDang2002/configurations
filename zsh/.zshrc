@@ -84,12 +84,16 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+# Preferred editor
+export EDITOR='nvim'
+export VISUAL='$EDITOR'
+
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+    export EDITOR='nvim'
+else
+    export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -105,5 +109,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias nvim="nvim"
+alias vim="nvim"
+alias vi="nvim"
 alias zed="zeditor"
 fastfetch
+# fastfetch --logo ~/Pictures/wallpapers/91ae5504fb9513b1197f532ba13f9b70-2066667601.png --logo-type kitty-direct --logo-width 25 --logo-height 17 --logo-padding 8 --logo-padding-top 0
+# fastfetch --logo ~/Pictures/wallpapers/155093691674788319-3711324211.png --logo-type kitty-direct --logo-width 35 --logo-height 15 --logo-padding 4 --logo-padding-top 1
+# fastfetch --logo ~/Pictures/wallpapers/avatarhd-3370982343.png --logo-type kitty-direct --logo-width 33 --logo-height 15 --logo-padding 4 --logo-padding-top 1
