@@ -33,10 +33,10 @@ return {
             },
         })
         -- keymaps
-        vim.keymap.set("n", "<leader>ee", ":Neotree toggle<CR>", { desc = "Toggle Neo-tree" })
-        vim.keymap.set("n", "<leader>ef", ":Neotree filesystem<CR>", { desc = "Neo-tree filesystem" })
-        vim.keymap.set("n", "<leader>eg", ":Neotree git_status<CR>", { desc = "Neo-tree git status" })
-        vim.keymap.set("n", "<leader>eb", ":Neotree buffers<CR>", { desc = "Neo-tree buffers" })
+        vim.keymap.set("n", "<leader>tt", ":Neotree toggle<CR>", { desc = "Toggle Neo-tree" })
+        vim.keymap.set("n", "<leader>tf", ":Neotree filesystem<CR>", { desc = "Neo-tree filesystem" })
+        vim.keymap.set("n", "<leader>tg", ":Neotree git_status<CR>", { desc = "Neo-tree git status" })
+        vim.keymap.set("n", "<leader>tb", ":Neotree buffers<CR>", { desc = "Neo-tree buffers" })
         -- vim.keymap.set("n", "<leader>es", ":Neotree document_symbols<CR>", { desc = "Neo-tree document symbols" })
     end,
 }
