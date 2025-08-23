@@ -58,13 +58,12 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty;
+bindsym $mod+Return exec --no-startup-id kitty
 
 # launch keybinds
 bindsym $mod+b exec --no-startup-id zen-browser
 bindsym $mod+n exec --no-startup-id notion-app
 bindsym $mod+s exec --no-startup-id spotify-launcher
-# bindsym $mod+t exec --no-startup-id ./spotify-qt/build/spotify-qt
 bindsym $mod+d exec --no-startup-id kitty -e yazi
 bindsym $mod+Escape exec --no-startup-id kitty -e btop
 bindsym $mod+c exec --no-startup-id kitty -e cava
@@ -147,6 +146,19 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+# assign workspace
+workspace $ws1 output DP-2
+workspace $ws2 output HDMI-0
+workspace $ws3 output DP-2
+workspace $ws4 output DP-2
+workspace $ws5 output DP-2
+workspace $ws6 output DP-2
+workspace $ws7 output DP-2
+workspace $ws8 output DP-2
+workspace $ws9 output DP-2
+workspace $ws10 output DP-2
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
