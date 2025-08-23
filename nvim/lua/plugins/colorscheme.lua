@@ -5,10 +5,22 @@ local function enable_transparency()
 end
 
 return {
+    --[[
     {
         "folke/tokyonight.nvim",
         config = function()
             vim.cmd.colorscheme "tokyonight-storm"
+            vim.cmd("hi Directory guibg=NONE")
+            vim.cmd("hi SignColumn guibg=NONE")
+            enable_transparency()
+        end
+    },
+    --]]
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        config = function()
+            vim.cmd("colorscheme rose-pine")
             vim.cmd("hi Directory guibg=NONE")
             vim.cmd("hi SignColumn guibg=NONE")
             enable_transparency()
@@ -20,7 +32,7 @@ return {
             "nvim-tree/nvim-web-devicons",
         },
         opts = {
-            theme = "tokyonight",
+            theme = "auto",
         }
     },
 }
