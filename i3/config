@@ -6,7 +6,7 @@ set $mod Mod4
 font pango:JetBrainsMono Nerd Font Mono Regular 4
 
 # start picom
-exec --no-startup-id picom
+exec_always --no-startup-id picom &
 
 # start autotiling
 exec_always --no-startup-id autotiling
