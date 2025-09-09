@@ -175,7 +175,6 @@ configuration {
   }
 }
 
-// @theme "/usr/share/rofi/themes/DarkBlue.rasi"
 @theme "/dev/null"
 
 * {
@@ -217,7 +216,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       700px;
+    width:                       750px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -284,7 +283,7 @@ entry {
 }
 
 mode-switcher{
-    enabled:                     true;
+    enabled:                     false;
     spacing:                     20px;
     background-color:            transparent;
     text-color:                  @text-color;
