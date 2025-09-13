@@ -1,5 +1,5 @@
 configuration {
-    modes: "drun,filebrowser,window";
+    modes: "drun,filebrowser,window,run";
 	font: "JetBrainsMono Nerd Font Mono Regular 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
@@ -173,6 +173,9 @@ configuration {
   window {
       display-name: "Window";
   }
+  run {
+      display-name: "Command";
+  }
 }
 
 @theme "/dev/null"
@@ -222,7 +225,7 @@ window {
 
     /* properties for all widgets */
     enabled:                     true;
-    border:			             1px solid;
+    border:			             2px solid;
     border-color:		         @bg2;
     border-radius:               8px;
     cursor:                      "default";
@@ -240,7 +243,8 @@ mainbox {
 imagebox {
     padding:                     16px;
     background-color:            transparent;
-    background-image:            url("~/Pictures/wallpapers/photo-1545569341-9eb8b30979d9.jpg", height);
+    // background-image:            url("~/Pictures/wallpapers/photo-1545569341-9eb8b30979d9.jpg", height);
+    background-image:            url("~/Pictures/profiles/active.jpg", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
@@ -303,7 +307,7 @@ button selected {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       7;
+    lines:                       6;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
