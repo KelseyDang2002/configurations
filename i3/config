@@ -8,6 +8,9 @@ font pango:JetBrainsMono Nerd Font Mono Regular 4
 # start picom
 exec_always --no-startup-id picom &
 
+# load nvidia config settings
+exec_always nvidia-settings --load-config-only
+
 # start autotiling
 exec_always --no-startup-id autotiling
 
@@ -37,17 +40,12 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # exec_always feh --bg-fill ~/Pictures/wallpapers/london-bridge-3840x2160-london-uk-fog-travel-tourism-5401.jpg
 # exec_always feh --bg-fill ~/Pictures/wallpapers/wp12782307.jpg
 # exec_always feh --bg-fill ~/Pictures/wallpapers/wallpapersden.com_mountains-sky-top_5894x3266.jpg
-# exec_always feh --bg-fill ~/Pictures/wallpapers/shinjuku-tokyo-mimimal-4k-o8.jpg
-# exec_always feh --bg-fill ~/Pictures/wallpapers/e30bw.jpg
 # exec_always feh --bg-fill ~/Pictures/wallpapers/photo-1545569341-9eb8b30979d9.jpg
 exec_always feh --bg-fill ~/Pictures/profiles/active.jpg
 
-# load nvidia config settings
-exec_always nvidia-settings --load-config-only
-
 # window settings
-# gaps inner 4
-# gaps outer 4
+gaps inner 4
+gaps outer 4
 default_border pixel 0
 default_floating_border pixel 0
 
@@ -70,6 +68,7 @@ bindsym $mod+Escape exec --no-startup-id kitty -e btop
 bindsym $mod+c exec --no-startup-id kitty -e cava
 bindsym $mod+m exec --no-startup-id kitty -e cmatrix
 bindsym $mod+a exec --no-startup-id pavucontrol
+bindsym $mod+d exec --no-startup-id dolphin
 
 # kill focused window
 bindsym $mod+q kill
@@ -84,7 +83,7 @@ bindsym $mod+q kill
 
 # rofi
 bindsym $mod+p exec --no-startup-id rofi -show drun
-bindsym $mod+d exec --no-startup-id rofi -show filebrowser
+# bindsym $mod+d exec --no-startup-id rofi -show filebrowser
 bindsym $mod+w exec --no-startup-id rofi -show window
 
 # change focus
