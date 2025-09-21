@@ -1,11 +1,8 @@
 configuration {
-    modes: "drun,filebrowser,window,run";
-	font: "JetBrainsMono Nerd Font Mono Regular 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-    show-icons: true;
 /*	preview-cmd: ;*/
 /*	on-selection-changed: ;*/
 /*	on-mode-changed: ;*/
@@ -21,7 +18,6 @@ configuration {
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-    icon-theme: "Zafiro-icons-Dark";
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-exclude-categories: ;*/
@@ -157,60 +153,102 @@ configuration {
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  drun {
-    display-name: "App";
-  }
-  filebrowser {
-    display-name: "File";
-    directories-first: true;
-    sorting-method: "name";
-    directory: "/home/$user";
-  }
-  window {
-      display-name: "Window";
-  }
-  run {
-      display-name: "Command";
-  }
+    modes: "drun,filebrowser,window,run";
+    font: "JetBrainsMono Nerd Font Mono Bold 12";
+    show-icons: true;
+    icon-theme: "Zafiro-Icons-Dark-Blue-f";
+
+    timeout {
+        action: "kb-cancel";
+        delay:  0;
+    }
+    drun {
+        display-name: "App";
+    }
+    filebrowser {
+        display-name: "File";
+        directories-first: true;
+        sorting-method: "name";
+        directory: "/home/$user";
+    }
+    window {
+        display-name: "Window";
+    }
+    run {
+        display-name: "Command";
+    }
 }
 
 @theme "/dev/null"
 
 * {
-  font: "JetBrainsMono Nerd Font Mono Bold 12";
+    font: "JetBrainsMono Nerd Font Mono Bold 12";
 
-  bg0     : #1a1b26;
-  bg1     : #1f2335;
-  bg2     : #24283bb3;
-  bg2o    : #24283b;
-  bg3     : #414868;
-  fg0     : #c0caf5;
-  fg1     : #a9b1d6;
-  fg2     : #737aa2;
-  red     : #f7768e;
-  green   : #9ece6a;
-  yellow  : #e0af68;
-  blue    : #7aa2f7;
-  magenta : #9a7ecc;
-  cyan    : #4abaaf;
+    // rose pine
+    base: #191724;
+    base-t: #191724b3;
+    surface: #1f1d2e;
+    overlay: #26233a;
+    muted: #6e6a86;
+    subtle: #908caa;
+    text: #e0def4;
+    love: #eb6f92;
+    gold: #f6c177;
+    rose: #ebbcba;
+    pine: #31748f;
+    foam: #9ccfd8;
+    iris: #c4a7e7;
+    low: #21202e;
+    med: #403d52;
+    high: #524f67;
 
-  accent: @red;
-  urgent: @yellow;
+    // rose pine moon
+    base-moon: #232136;
+    base-moon-t: #232136b3;
+    surface-moon: #2a273f;
+    overlay-moon: #393552;
+    muted-moon: #6e6a86;
+    subtle-moon: #908caa;
+    text-moon: #e0def4;
+    love-moon: #eb6f92;
+    gold-moon: #f6c177;
+    rose-moon: #ea9a97;
+    pine-moon: #3e8fb0;
+    foam-moon: #9ccfd8;
+    iris-moon: #c4a7e7;
+    low-moon: #2a283e;
+    med-moon: #44415a;
+    high-moon: #56526e;
+  
+    // tokyo night
+    bg0     : #1a1b26;
+    bg1     : #1f2335;
+    bg2     : #24283bb3;
+    bg2o    : #24283b;
+    bg3     : #414868;
+    fg0     : #c0caf5;
+    fg1     : #a9b1d6;
+    fg2     : #737aa2;
+    red     : #f7768e;
+    green   : #9ece6a;
+    yellow  : #e0af68;
+    blue    : #7aa2f7;
+    magenta : #9a7ecc;
+    cyan    : #4abaaf;
 
-  background-color : transparent;
-  text-color       : @fg0;
+    accent: @rose;
+    urgent: @love;
 
-  margin  : 0px;
-  padding : 0px;
-  spacing : 0px;
+    background-color : transparent;
+    text-color       : @text;
+
+    margin  : 0px;
+    padding : 0px;
+    spacing : 0px;
 }
 
 element-icon, element-text, scrollbar {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 window {
@@ -226,10 +264,10 @@ window {
     /* properties for all widgets */
     enabled:                     true;
     border:			             2px solid;
-    border-color:		         @bg2;
+    border-color:		         @base-moon-t;
     border-radius:               8px;
     cursor:                      "default";
-    background-color:            @bg2;
+    background-color:            @base-moon-t;
 }
 
 mainbox {
@@ -266,7 +304,7 @@ inputbar {
     spacing:                     0px;
     padding:                     8px;
     border-radius:               8px;
-    background-color:		     @bg2o;
+    background-color:		     @base-moon;
     text-color:			         @text-color;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
@@ -282,8 +320,8 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "";
-    placeholder-color:           @fg1;
+    placeholder:                 " Search ";
+    placeholder-color:           @muted;
 }
 
 mode-switcher{
@@ -295,13 +333,13 @@ mode-switcher{
 button {
     padding:                     4px;
     border-radius:               8px;
-    background-color:            @bg2;
+    background-color:            @base-moon;
     text-color:                  inherit;
     cursor:                      pointer;
 }
 button selected {
     background-color:            @accent;
-    text-color:                  @bg2;
+    text-color:                  @base-moon;
 }
 
 listview {
@@ -340,20 +378,20 @@ element normal.urgent {
     text-color:                  @text-color;
 }
 element normal.active {
-    background-color:            @bg0;
+    background-color:            @base-moon;
     text-color:                  @text-color;
 }
 element selected.normal {
     background-color:            @accent;
-    text-color:                  @bg2;
+    text-color:                  @base-moon;
 }
 element selected.urgent {
     background-color:            @urgent;
-    text-color:                  @bg2;
+    text-color:                  @base-moon;
 }
 element selected.active {
     background-color:            @accent;
-    text-color:                  @bg2;
+    text-color:                  @base-moon;
 }
 element-icon {
     background-color:            transparent;
@@ -383,6 +421,6 @@ textbox {
 error-message {
     padding:                     16px;
     border-radius:               20px;
-    background-color:            @bg0;
+    background-color:            @base-moon;
     text-color:                  @text-color;
 }
