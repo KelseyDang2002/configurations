@@ -264,10 +264,10 @@ window {
     /* properties for all widgets */
     enabled:                     true;
     border:			             2px solid;
-    border-color:		         @base-moon-t;
+    border-color:		         @base-t;
     border-radius:               8px;
     cursor:                      "default";
-    background-color:            @base-moon-t;
+    background-color:            @base-t;
 }
 
 mainbox {
@@ -304,7 +304,7 @@ inputbar {
     spacing:                     0px;
     padding:                     8px;
     border-radius:               8px;
-    background-color:		     @base-moon;
+    background-color:		     @base;
     text-color:			         @text-color;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
@@ -333,13 +333,13 @@ mode-switcher{
 button {
     padding:                     4px;
     border-radius:               8px;
-    background-color:            @base-moon;
+    background-color:            @base;
     text-color:                  inherit;
     cursor:                      pointer;
 }
 button selected {
     background-color:            @accent;
-    text-color:                  @base-moon;
+    text-color:                  @base;
 }
 
 listview {
@@ -378,20 +378,20 @@ element normal.urgent {
     text-color:                  @text-color;
 }
 element normal.active {
-    background-color:            @base-moon;
+    background-color:            @base;
     text-color:                  @text-color;
 }
 element selected.normal {
     background-color:            @accent;
-    text-color:                  @base-moon;
+    text-color:                  @base;
 }
 element selected.urgent {
     background-color:            @urgent;
-    text-color:                  @base-moon;
+    text-color:                  @base;
 }
 element selected.active {
     background-color:            @accent;
-    text-color:                  @base-moon;
+    text-color:                  @base;
 }
 element-icon {
     background-color:            transparent;
@@ -421,6 +421,6 @@ textbox {
 error-message {
     padding:                     16px;
     border-radius:               20px;
-    background-color:            @base-moon;
+    background-color:            @base;
     text-color:                  @text-color;
 }
