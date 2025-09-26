@@ -156,7 +156,8 @@ configuration {
     modes: "drun,filebrowser,window,run";
     font: "JetBrainsMono Nerd Font Mono Bold 12";
     show-icons: true;
-    icon-theme: "Zafiro-Icons-Dark-Blue-f";
+    // icon-theme: "Zafiro-Icons-Dark-Blue-f";
+    icon-theme: "Chicago95";
 
     timeout {
         action: "kb-cancel";
@@ -281,7 +282,6 @@ mainbox {
 imagebox {
     padding:                     16px;
     background-color:            transparent;
-    // background-image:            url("~/Pictures/wallpapers/photo-1545569341-9eb8b30979d9.jpg", height);
     background-image:            url("~/Pictures/profiles/active.jpg", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
