@@ -44,8 +44,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 exec_always feh --bg-fill ~/Pictures/profiles/active.jpg
 
 # window settings
-gaps inner 4
-gaps outer 4
+# gaps inner 4
+# gaps outer 4
 default_border pixel 0
 default_floating_border pixel 0
 
@@ -58,10 +58,12 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+t exec --no-startup-id alacritty
 
 # launch keybinds
 bindsym $mod+b exec --no-startup-id zen-browser
 bindsym $mod+n exec --no-startup-id notion-app
+bindsym $mod+o exec --no-startup-id obsidian
 bindsym $mod+s exec --no-startup-id spotify-launcher
 bindsym $mod+y exec --no-startup-id kitty -e yazi
 bindsym $mod+Escape exec --no-startup-id kitty -e btop
